@@ -1,0 +1,124 @@
+<!DOCTYPE  html>
+ <html>
+   <head>
+     <meta charset="UTF-8">
+     <title>Hanson Joshua's Portfolio</title>
+     <style>
+       * {
+         box-sizing: border-box;
+       }
+       body {
+         margin: 0;
+         font-family: Times New Roman, Sans-Serif;
+         font-size: 16px;
+         background-color: #fff;
+         color: #000;
+       }
+       h2 {
+         border-bottom: 1px solid #bbb;
+         margin-top: 10px;
+         line-height: 1.5;
+         font-weight: bold;
+         color: skyblue;
+       }
+       /*navbar*/
+       nav {
+         background-color: skyblue;
+         border: 5px solid #fff;
+         padding: 15px;
+       }
+       nav ul {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         margin: 0;
+         padding: 0;
+         gap: 30px;
+       }
+       nav a {
+         color: #000;
+        text-decoration: none;
+        font-weight: bold;
+       }
+       /*section*/
+       section {
+         padding: 40px 20px;
+         max-width: 900px;
+         margin: auto;
+       }
+       /*projects*/
+       .projects {
+         margin: 5px;
+         padding: 10px 5px;
+         background-color: white;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       }
+       .projects-card {
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.2)
+       }
+       /*media*/
+       @media (max-width: 600px) {
+         body{
+           padding: 10px;
+         }
+         nav ul {
+           flex-direction: column;
+           text-align: center;
+           gap: 15px;
+         }
+       }
+     </style>
+   </head>
+   <body>
+     <nav>
+       <ul>
+         <li><a href="#about">About</a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a href="#projects">Projects</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+     </nav>
+     <section id="about">
+       <h2>About Me</h2>
+       <p>Hi!, I'm Joshua Hanson, a final year student at <strong>Peki College of Education</strong>. I am currently offering JHS Education and specializing in Mathematics and computing(IT). I am very passionate about web development and hope to advance my skills in that department to be able to create user friendly web interface.</p>
+     </section>
+     <section id="skills">
+       <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>Css</li>
+          <li>JavaScript(learning)</li>
+          <li>Data Entry</li>
+          <li>Data Cleaning</li>
+          <li>Data Extraction</li>
+        </ul>
+     </section>
+     <section id="projects">
+       <h2>My Projects</h2>
+        <div class="projects">
+          <div class="projects-card">
+            <h3>Library Website</h3>
+            <p>This is a library website built using html and css. It was design to be visually appealing</p>
+          </div>
+          <div class="projects-card">
+            <h3>Infinite BarberShop Website</h3>
+            <p>This website was also made using html- for the structure of the webpage, css- for the styling of webpage and JavaScript- to make the webpage more responsive.</p>
+          </div>
+          <div class="projects-card">
+            <h3>Coming Soon</h3>
+            <p>Watch out for more responsive website with html, css and JavaScript</p>
+          </div>
+          </div>
+        </div>
+     </section>
+     <section id="contact">
+       <h2>My Contact</h2>
+         <p>
+           <strong>Email</strong>: joshuahanson500@gmail.com <br>
+           <strong>Number</strong>: 0553212271
+         </p>
+     </section>
+   </body>
+ </html>
